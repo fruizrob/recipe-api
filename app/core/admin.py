@@ -29,7 +29,7 @@ class UserAdmin(BaseUserAdmin):
         })
     )
     readonly_fields = ['last_login']
-    add_fields = (
+    add_fieldsets = (
         (None, {
             'classes': ('wide',),
             'fields': (
@@ -40,7 +40,7 @@ class UserAdmin(BaseUserAdmin):
                 'is_active',
                 'is_staff',
                 'is_superuser',
-            )
+            ),
         }),
     )
 
